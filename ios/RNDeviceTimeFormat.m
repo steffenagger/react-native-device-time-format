@@ -7,19 +7,18 @@
 {
     return dispatch_get_main_queue();
 }
+
 RCT_EXPORT_MODULE()
 
-BOOL is24Hour = false;
-
-+ (void)initialize {
+RCT_REMAP_METHOD(is24HourFormat,
+                 resolver:(RCTPromiseResolveBlock)resolve
+                 rejecter:(RCTPromiseRejectBlock)reject)
+{
     NSString *formatStringForHours = [NSDateFormatter dateFormatFromTemplate:@"j" options:0 locale:[NSLocale currentLocale]];
     NSRange containsA = [formatStringForHours rangeOfString:@"a"];
-    is24Hour = containsA.location == NSNotFound;
-}
+    BOOL is24HourFormat = (containsA.location == NSNotFound);
 
-- (NSDictionary *)constantsToExport
-{
-  return @{ @"is24Hour": @(is24Hour) };
+    resolve(@{ @"is24HourFormat": @(is24HourFormat) });
 }
 
 @end

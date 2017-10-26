@@ -1,5 +1,5 @@
 
-package com.risedigital;
+package dk.risedigital;
 
 import java.util.Arrays;
 import java.util.Collections;
