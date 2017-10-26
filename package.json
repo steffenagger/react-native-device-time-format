@@ -1,4 +1,3 @@
-
 {
   "name": "react-native-device-time-format",
   "version": "1.0.0",
@@ -12,9 +11,9 @@
     "hour format"
   ],
   "author": "Rise Digital",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/risedigital/react-native-device-time-format.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/risedigital/react-native-device-time-format.git"
   },
   "license": ""
 }
