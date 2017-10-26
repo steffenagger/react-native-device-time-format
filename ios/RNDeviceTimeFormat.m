@@ -18,7 +18,7 @@ RCT_REMAP_METHOD(is24HourFormat,
     NSRange containsA = [formatStringForHours rangeOfString:@"a"];
     BOOL is24HourFormat = (containsA.location == NSNotFound);
 
-    resolve(@{ @"is24HourFormat": @(is24HourFormat) });
+    resolve(@(is24HourFormat));
 }
 
 @end
