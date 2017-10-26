@@ -10,10 +10,22 @@
     "time format",
     "hour format"
   ],
-  "author": "Rise Digital",
   "repository": {
     "type": "git",
     "url": "https://github.com/risedigital/react-native-device-time-format.git"
   },
-  "license": ""
+  "bugs": "https://github.com/risedigital/react-native-device-time-format/issues",
+  "author": {
+    "name" : "Rise Digital",
+    "email" : "dev@risedigital.dk",
+    "url" : "https://www.risedigital.dk/"
+  },
+  "contributors": [
+    {
+      "name" : "Steffen Agger",
+      "email" : "steffen.agger@gmail.com",
+      "url" : "http://sua.io"
+    }
+  ],
+  "license": "ISC"
 }
