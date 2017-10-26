@@ -44,6 +44,9 @@ import moment from 'moment'
 // result for "2017-10-23T23:00:00" either "23:00" or "11 PM"
 // depending on the devices time settings.
 const hourFormat = (date) =>
-  moment(date)
-    .format(DeviceTimeFormat.is24Hour ? 'HH:mm' : 'h A')
+	DeviceTimeFormat.is24HourFormat()
+		.then((use24HourFormat) =>
+			moment(date).format(use24HourFormat ? 'HH:mm' : 'h A'))
+
+// Or you could save it your app state... *hint hint*
 ```
