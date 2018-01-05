@@ -14,11 +14,16 @@ RCT_REMAP_METHOD(is24HourFormat,
                  resolver:(RCTPromiseResolveBlock)resolve
                  rejecter:(RCTPromiseRejectBlock)reject)
 {
-    NSString *formatStringForHours = [NSDateFormatter dateFormatFromTemplate:@"j" options:0 locale:[NSLocale currentLocale]];
-    NSRange containsA = [formatStringForHours rangeOfString:@"a"];
-    BOOL is24HourFormat = (containsA.location == NSNotFound);
-
-    resolve(@(is24HourFormat));
+    @try {
+        NSString *formatStringForHours = [NSDateFormatter dateFormatFromTemplate:@"j" options:0 locale:[NSLocale currentLocale]];
+        NSRange containsA = [formatStringForHours rangeOfString:@"a"];
+        BOOL is24HourFormat = (containsA.location == NSNotFound);
+        
+        resolve(@(is24HourFormat));
+    }
+    @catch (NSException *exception) {
+        reject(@"exception", nil, RCTErrorWithMessage(@(exception.reason));
+    }
 }
 
 @end
