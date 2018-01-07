@@ -1,7 +1,7 @@
 
 # @rise-digital/react-native-device-time-format
 
-This package was inspired by [react-native-device-clock-format](https://github.com/brentvatne/react-native-device-clock-format), which is *"no longer actively maintained"*, while only supporting iOS.
+This package was inspired by [react-native-device-clock-format](https://github.com/brentvatne/react-native-device-clock-format), which is *"no longer actively maintained"*, and only supported iOS.
 
 On mobile devices you have the option to opt in or out of you current locale's time-format (12/24 hour clock).
 This package exposes this device setting for iOS & Android, and React Native only has general locales exposed, as this is what JavaScript/browsers supports.
