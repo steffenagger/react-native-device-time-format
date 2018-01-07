@@ -1,20 +1,37 @@
 
 # @rise-digital/react-native-device-time-format
 
+This package was inspired by [react-native-device-clock-format](https://github.com/brentvatne/react-native-device-clock-format), which is *"no longer actively maintained"*, while only supporting iOS.
+
+On mobile devices you have the option to opt in or out of you current locale's time-format (12/24 hour clock).
+This package exposes this device setting for iOS & Android, and React Native only has general locales exposed, as this is what JavaScript/browsers supports.
+
+## Supported platforms
+
+- [x] iOS
+- [x] Android
+
 ## Getting started
 
-`$ yarn add @rise-digital/react-native-device-time-format`
+Install with your preferred package manager:
+`yarn add @rise-digital/react-native-device-time-format`
 or
-`$ npm install @rise-digital/react-native-device-time-format --save`
+`npm install @rise-digital/react-native-device-time-format --save`
 
-### Mostly automatic installation
+### Automatic installation
 
-`$ react-native link @rise-digital/react-native-device-time-format`
+In most cases, this module can be linked automatically by:
+`react-native link @rise-digital/react-native-device-time-format`
 
+Should this fail, in case of folder structure mismatch or various other versions, please follow the manual installation guide bellow.
 
 ### Manual installation
 
+*Skip this, if automatic installation yielded no issues.*
+
 #### iOS
+
+[React Native official guide](https://facebook.github.io/react-native/docs/linking-libraries-ios.html)
 
 1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 2. Go to `node_modules` ➜ `@rise-digital/react-native-device-time-format` and add `RNDeviceTimeFormat.xcodeproj`
@@ -35,7 +52,6 @@ or
   	```
       compile project(':@rise-digital/react-native-device-time-format')
   	```
-
 
 ## Usage
 
