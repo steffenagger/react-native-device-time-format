@@ -1,6 +1,6 @@
 {
   "name": "@rise-digital/react-native-device-time-format",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Get device setting for time format in react-native",
   "main": "index.js",
   "scripts": {},
@@ -19,14 +19,14 @@
   "homepage": "https://github.com/risedigital/react-native-device-time-format#readme",
   "bugs": "https://github.com/risedigital/react-native-device-time-format/issues",
   "author": {
-    "name" : "Rise Digital",
-    "url" : "https://www.risedigital.dk/"
+    "name": "Rise Digital",
+    "url": "https://www.risedigital.dk/"
   },
   "contributors": [
     {
-      "name" : "Steffen Agger",
-      "email" : "steffen.agger@gmail.com",
-      "url" : "http://sua.io"
+      "name": "Steffen Agger",
+      "email": "steffen.agger@gmail.com",
+      "url": "http://sua.io"
     }
   ],
   "license": "MIT"
