@@ -17,7 +17,7 @@
 2. Append the following lines to `android/settings.gradle`:
   	```
   	include ':@rise-digital/react-native-device-time-format'
-  	project(':@rise-digital/react-native-device-time-format').projectDir = new File(rootProject.projectDir, 	'../node_modules/@rise-digital/react-native-device-time-format/android')
+  	project(':@rise-digital/react-native-device-time-format').projectDir = new File(rootProject.projectDir, '../node_modules/@rise-digital/react-native-device-time-format/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
