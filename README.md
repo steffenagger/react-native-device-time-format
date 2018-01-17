@@ -18,12 +18,18 @@ This package exposes this device setting for iOS & Android.
 ## Getting started
 
 Install with your preferred package manager:
-`yarn add @rise-digital/react-native-device-time-format`
+```
+yarn add @rise-digital/react-native-device-time-format
+```
 or
-`npm install @rise-digital/react-native-device-time-format --save`
+```
+npm install @rise-digital/react-native-device-time-format --save
+```
 
 And link the module by:
-`react-native link @rise-digital/react-native-device-time-format`
+```
+react-native link @rise-digital/react-native-device-time-format
+```
 
 Should the automatic linking fail (in case of folder structure mismatch or various other reasons), please follow the [manual installation guide](docs/MANUAL_INSTALLATION.md).
 
