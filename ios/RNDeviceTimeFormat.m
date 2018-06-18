@@ -1,4 +1,3 @@
-
 #import "RNDeviceTimeFormat.h"
 
 @implementation RNDeviceTimeFormat
@@ -22,7 +21,8 @@ RCT_REMAP_METHOD(is24HourFormat,
         resolve(@(is24HourFormat));
     }
     @catch (NSException *exception) {
-        reject(@"exception", nil, RCTErrorWithMessage(@(exception.reason)));
+        NSString *reason = exception.reason;
+        reject(@"exception", nil, RCTErrorWithMessage(reason));
     }
 }
 
