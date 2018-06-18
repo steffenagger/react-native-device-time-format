@@ -42,7 +42,7 @@ import DeviceTimeFormat from 'react-native-device-time-format'
 import moment from 'moment'
 
 /**
- * @function hourFormat
+ * @function getCurrentHourFormat
  * @param  {Date} date Date to format
  * @return {Promise<string>} formatted string HH:mm / h:mm A, depending on device setting
  */
