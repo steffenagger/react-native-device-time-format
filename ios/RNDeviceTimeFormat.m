@@ -22,7 +22,7 @@ RCT_REMAP_METHOD(is24HourFormat,
         resolve(@(is24HourFormat));
     }
     @catch (NSException *exception) {
-        reject(@"exception", nil, RCTErrorWithMessage(@(exception.reason));
+        reject(@"exception", nil, RCTErrorWithMessage(@(exception.reason)));
     }
 }
 
