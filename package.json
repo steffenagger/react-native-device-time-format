@@ -1,6 +1,6 @@
 {
-  "name": "@rise-digital/react-native-device-time-format",
-  "version": "2.0.0",
+  "name": "react-native-device-time-format",
+  "version": "2.0.0-beta",
   "description": "Get device setting for time format in react-native",
   "main": "index.js",
   "scripts": {},
