@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNDeviceTimeFormat
                    DESC
-  s.homepage     = "https://github.com/verticalstrategy/react-native-device-time-format"
+  s.homepage     = "https://github.com/steffenagger/react-native-device-time-format"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
