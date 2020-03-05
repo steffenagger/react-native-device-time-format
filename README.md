@@ -26,7 +26,9 @@ or
 npm install react-native-device-time-format --save
 ```
 
-And link the module by:
+0.60+ autolinking fix applied by [Tim Kuilman](https://github.com/timkuilman) (thank).
+
+And link the module by (for RN < 0.60):
 ```
 react-native link react-native-device-time-format
 ```
