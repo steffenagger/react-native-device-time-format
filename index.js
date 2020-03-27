@@ -1,6 +1,7 @@
 
-import { NativeModules } from 'react-native';
+import { NativeModules } from 'react-native'
+const { RNDeviceTimeFormat } = NativeModules
 
-const { RNDeviceTimeFormat } = NativeModules;
+export const is24HourFormat = RNDeviceTimeFormat.is24HourFormat
 
-export default RNDeviceTimeFormat;
+export default { is24HourFormat }

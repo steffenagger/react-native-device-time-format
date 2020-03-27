@@ -1,19 +1,20 @@
 
 # react-native-device-time-format
 
-This package was inspired by [react-native-device-clock-format](https://github.com/brentvatne/react-native-device-clock-format), which is *"no longer actively maintained"*, and only supported iOS.
-
-On mobile devices users have the option to opt in, or out, pf the predefined locale used for their language settings (12/24 hour clock):
+On mobile devices users have the option to opt in/out, of the systems locale, in regards to 12/24 hour clock format:
 
 ![12/24 time format iOS settings](https://i.imgur.com/uLD3onD.jpg)
 
 This package exposes this device setting for iOS & Android.
 
-## Supported platforms
+## Contributions
 
-- [x] iOS
-- [x] Android
-- [ ] Windows
+This package was heavily inspired by [react-native-device-clock-format](https://github.com/brentvatne/react-native-device-clock-format), which is *"no longer actively maintained"*, and only supports iOS.
+
+- React Native: 0.60+ autolinking support - fix by [Tim Kuilman](https://github.com/timkuilman)
+- Android: SDK Build Tools version warning - fix by [Tihomir Valkanov](https://github.com/thinklinux)
+
+Thank you 🙏
 
 ## Getting started
 
@@ -26,9 +27,7 @@ or
 npm install react-native-device-time-format --save
 ```
 
-0.60+ autolinking fix applied by [Tim Kuilman](https://github.com/timkuilman) (thank).
-
-And link the module by (for RN < 0.60):
+For React Native < `0.60`, run:
 ```
 react-native link react-native-device-time-format
 ```
@@ -40,7 +39,7 @@ Should the automatic linking fail (in case of folder structure mismatch or vario
 Bellow is an example of fetching the hours & minutes string representation from a date, with the device time format (using [moment](https://www.npmjs.com/package/moment) for date/time formatting):
 
 ```js
-import DeviceTimeFormat from 'react-native-device-time-format'
+import { is24HourFormat } from 'react-native-device-time-format'
 import moment from 'moment'
 
 /**
@@ -49,9 +48,9 @@ import moment from 'moment'
  * @return {Promise<string>} formatted string HH:mm / h:mm A, depending on device setting
  */
 const getCurrentHourFormat = async (date) => {
-  const using24HourFormat = await DeviceTimeFormat.is24HourFormat()
-  return moment(date).format(using24HourFormat ? 'HH:mm' : 'h:mm A'))
+  const is24Hour = await is24HourFormat()
+  return moment(date).format(is24Hour ? 'HH:mm' : 'h:mm A'))
 }
 ```
 
-All native modules runs asynchronous, we suggest updating an internal state in your app when `AppState` changes to active.
+All native modules runs asynchronous, I would suggest updating an internal state in your app when `AppState` changes to active.
