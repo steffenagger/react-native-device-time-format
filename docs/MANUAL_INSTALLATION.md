@@ -21,5 +21,5 @@
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-device-time-format')
+      implementation project(':react-native-device-time-format')
   	```
