@@ -1,15 +1,14 @@
 
 Pod::Spec.new do |s|
   s.name         = "RNDeviceTimeFormat"
-  s.version      = "1.0.0"
-  s.summary      = "RNDeviceTimeFormat"
+  s.version      = "2.0.0"
+  s.summary      = "Exposes the device setting for 12/24 hour format to React Native"
   s.description  = <<-DESC
                   RNDeviceTimeFormat
                    DESC
   s.homepage     = "https://github.com/steffenagger/react-native-device-time-format"
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author             = { "author" => "author@domain.cn" }
+  s.author       = { "Steffen Agger" => "steffen.agger@gmail.com" }
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/author/RNDeviceTimeFormat.git", :tag => "#{s.version}"}
   s.source_files  = "*.{h,m}"
@@ -17,7 +16,6 @@ Pod::Spec.new do |s|
 
 
   s.dependency "React"
-  #s.dependency "others"
 
 end
 

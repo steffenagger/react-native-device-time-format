@@ -19,14 +19,18 @@
   "homepage": "https://github.com/steffenagger/react-native-device-time-format#readme",
   "bugs": "https://github.com/steffenagger/react-native-device-time-format/issues",
   "author": {
-    "name": "Rise Digital",
-    "url": "https://www.risedigital.dk/"
+    "name": "Steffen Agger",
+    "email": "steffen.agger@gmail.com",
+    "url": "https://github.com/steffenagger"
   },
   "contributors": [
     {
-      "name": "Steffen Agger",
-      "email": "steffen.agger@gmail.com",
-      "url": "https://github.com/steffenagger"
+      "name": "Tim Kuilman",
+      "url": "https://github.com/timkuilman"
+    },
+    {
+      "name": "Tihomir Valkanov",
+      "url": "https://github.com/thinklinux"
     }
   ],
   "license": "MIT"

@@ -1,5 +1,5 @@
 
-package dk.risedigital;
+package io.sua;
 
 import android.text.format.DateFormat;
 

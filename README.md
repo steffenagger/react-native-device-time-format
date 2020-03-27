@@ -24,7 +24,12 @@ yarn add react-native-device-time-format
 ```
 or
 ```
-npm install react-native-device-time-format --save
+npm install react-native-device-time-format --save &&
+```
+
+For iOS, install pod:
+```
+(cd ios/ && pod install)
 ```
 
 For React Native < `0.60`, run:

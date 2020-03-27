@@ -1,5 +1,5 @@
 
-package dk.risedigital;
+package io.sua;
 
 import java.util.Arrays;
 import java.util.Collections;
